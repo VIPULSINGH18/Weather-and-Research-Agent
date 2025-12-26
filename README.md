@@ -1,6 +1,6 @@
 <div align="center">
 # 🧪 Research & Weather Assistant Agent
-### An Autonomous AI Agent powered by LangGraph & Google Gemini
+### An Autonomous AI Agent powered by LangGraph & Google Gemini  </div>
 
 ![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![LangChain](https://img.shields.io/badge/LangChain-🦜🔗-green?style=for-the-badge)
@@ -193,4 +193,4 @@ Focused on building reliable, controllable, production-ready AI systems.
 
 LinkedIn: https://www.linkedin.com/in/vipulsk04/     GitHub Profile: https://github.com/VIPULSINGH18
 
-</div>
+

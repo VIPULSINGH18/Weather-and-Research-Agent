@@ -77,7 +77,7 @@ Repeat: It loops back to synthesize the final answer.
 
 
 
-#🧰 Tech Stack:
+<h2>🧰 Tech Stack: </h2>
 
 Brain: Google Gemini (Flash Model) - Chosen for high speed, large context, and reliability.
 
@@ -91,7 +91,7 @@ Language: Python 3.12+
 
 
 
-#📂 Project Structure
+<h2>📂 Project Structure</h2>
 Bash
 
 Research-Weather-Agent/
@@ -105,7 +105,7 @@ Research-Weather-Agent/
 
 
 
-#⚡ Getting Started:
+<h2>⚡ Getting Started:</h2>
 
 1. Clone the Repository
 Bash
@@ -140,7 +140,7 @@ streamlit run agent_frontend.py
 
 
 
-#🎯 Why This Project Matters :
+<h2>🎯 Why This Project Matters :</h2>
 
 This project moves beyond "calling an API" to building a reliable system. Key engineering decisions included:
 
@@ -156,7 +156,7 @@ Error Handling: If a tool (like Weather API) fails, the agent catches the error 
 
 
 
-#🚧 Future Roadmap
+<h2>🚧 Future Roadmap</h2>
 [ ] RAG Integration: Connect to local PDFs for document-based Q&A.
 
 [ ] Multi-Agent System: Separate 'Research Agent' and 'Writer Agent'.
@@ -167,7 +167,7 @@ Error Handling: If a tool (like Weather API) fails, the agent catches the error 
 
 
 
-#👤 Author
+<h2>👤 Author</h2>
 Vipul Kumar Singh   AI / ML Engineer | Agentic AI Enthusiast
 
 Focused on building reliable, controllable, production-ready AI systems.

@@ -1,4 +1,4 @@
-<img width="1920" height="1080" alt="Screenshot 2025-12-27 013752" src="https://github.com/user-attachments/assets/cf71f135-1011-4081-81ac-7daaf876e4b0" /># 🧪 Research & Weather Assistant Agent
+# 🧪 Research & Weather Assistant Agent
 ### An Autonomous AI Agent powered by LangGraph & Google Gemini
 
 ![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)
@@ -13,6 +13,7 @@
 
 ![Agent Dashboard](<img width="1920" height="1080" alt="Screenshot 2025-12-27 013752" src="https://github.com/user-attachments/assets/67190cf8-e3a2-4b23-88e3-bbd7d1bffa57" />
 )
+<img width="200" height="108" alt="Screenshot 2025-12-27 013752" src="https://github.com/user-attachments/assets/cf71f135-1011-4081-81ac-7daaf876e4b0" />
 *(Note: Create an 'assets' folder and put your screenshot named 'dashboard_preview.png' inside it)*
 
 ---

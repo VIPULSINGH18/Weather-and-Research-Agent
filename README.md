@@ -1,7 +1,5 @@
-<div align="center">
-
-# 🧪 Research & Weather Assistant Agent
-### An Autonomous AI Agent powered by LangGraph, LLaMA-3 & Groq
+<img width="1920" height="1080" alt="Screenshot 2025-12-27 013752" src="https://github.com/user-attachments/assets/cf71f135-1011-4081-81ac-7daaf876e4b0" /># 🧪 Research & Weather Assistant Agent
+### An Autonomous AI Agent powered by LangGraph & Google Gemini
 
 ![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![LangChain](https://img.shields.io/badge/LangChain-🦜🔗-green?style=for-the-badge)
@@ -9,17 +7,18 @@
 ![Gemini](https://img.shields.io/badge/Google%20Gemini-8E75B2?style=for-the-badge&logo=google&logoColor=white)
 ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
 
-<br />
+---
 
-<img src="https://via.placeholder.com/800x400.png?text=Agent+Dashboard+Preview" alt="Agent Dashboard" width="800"/>
 
-<br />
 
-**A production-style AI agent that thinks, decides, acts, and stops safely.** *Not just a text generator — an engineered system.*
+![Agent Dashboard](<img width="1920" height="1080" alt="Screenshot 2025-12-27 013752" src="https://github.com/user-attachments/assets/67190cf8-e3a2-4b23-88e3-bbd7d1bffa57" />
+)
+*(Note: Create an 'assets' folder and put your screenshot named 'dashboard_preview.png' inside it)*
 
-[View Demo](#) · [Report Bug](issues) · [Request Feature](issues)
+---
 
-</div>
+**A production-style AI agent that thinks, decides, acts, and stops safely.**
+*Not just a text generator — an engineered system.*
 
 ---
 
@@ -30,10 +29,11 @@ This project is an **end-to-end autonomous AI agent system**. Unlike standard ch
 It autonomously determines *if* it needs to search the web, check the weather, or answer directly. It features a robust **confidence scoring system** to let users know how reliable the answer is.
 
 ### 🌟 Key Capabilities
+
 | Feature | Description |
 | :--- | :--- |
 | **🌍 Real-Time Weather** | Fetches live weather data for any global location via Weatherstack API. |
-| **📰 Live Research** | Performs web searches for current events (beyond the LLM's training cutoff). |
+| **📰 Live Research** | Performs web searches for current events using DuckDuckGo. |
 | **🧠 Autonomous Reasoning** | Uses `LangGraph` to loop through Thought → Action → Observation. |
 | **📊 Confidence Scoring** | Self-evaluates its answers and displays a confidence badge (High/Low) in the UI. |
 | **🛑 Safety Loops** | Implements recursion limits to prevent infinite agent loops and handle tool failures gracefully. |
@@ -42,7 +42,7 @@ It autonomously determines *if* it needs to search the web, check the weather, o
 
 ## 🧠 Architecture & Engineering
 
-This project demonstrates **AI Engineering** concepts over simple prompt engineering.
+This project demonstrates **AI Engineering** concepts over simple prompt engineering. It uses a cyclic graph to manage state and decision-making.
 
 ```mermaid
 graph TD
@@ -58,27 +58,25 @@ graph TD
     Agent -->|Reasoning Loop| Agent
     Agent -->|Confident Answer| Final[✅ Final Answer + Confidence Score]
     Final --> UI[🖥️ Streamlit Frontend]
+The ReAct Loop Process
+Thought: The agent analyzes the user request (e.g., "Weather in Delhi?").
 
+Decision: It chooses the correct tool (Weather API).
 
-The ReAct Loop
-Thought: The agent analyzes the user request.
+Action: It executes the Python function.
 
-Decision: It chooses a tool (Search, Weather) or decides to answer.
+Observation: It reads the real data (JSON).
 
-Action: It executes the Python function for the tool.
-
-Observation: It reads the tool's output (JSON/Text).
-
-Repeat: It loops until it has enough data to satisfy the user.
+Repeat: It loops back to synthesize the final answer.
 
 🧰 Tech Stack
-Brain: Groq (LLaMA-3.3-70B) - Selected for ultra-low latency inference.
+Brain: Google Gemini (Flash Model) - Chosen for high speed, large context, and reliability.
 
-Orchestration: LangChain & LangGraph - For stateful agent cycles.
+Orchestration: LangChain & LangGraph - For building stateful, cyclic agent workflows.
 
 Tools: DuckDuckGo Search & Weatherstack API.
 
-Frontend: Streamlit - With custom CSS for a production-grade dark theme.
+Frontend: Streamlit - Custom CSS styling for a futuristic, dark-themed UI.
 
 Language: Python 3.10+
 
@@ -87,8 +85,9 @@ Bash
 
 Research-Weather-Agent/
 │
+├── assets/              # 📸 Stores images for README
+│   └── dashboard_preview.png
 ├── agent_frontend.py    # 🎨 Main Streamlit App + UI Logic
-├── agent_backend.py     # 🧠 Core Agent Logic (LangGraph setup)
 ├── .env                 # 🔐 API Keys (Keep secret!)
 ├── requirements.txt     # 📦 Python Dependencies
 └── README.md            # 📄 Documentation
@@ -115,8 +114,8 @@ Create a .env file in the root directory:
 
 Ini, TOML
 
-GROQ_API_KEY=your_groq_api_key_here
-WEATHER_API_KEY=your_weatherstack_api_key_here
+GOOGLE_API_KEY=your_gemini_api_key
+WEATHER_API_KEY=your_weatherstack_key
 5. Run the Agent 🚀
 Bash
 
@@ -139,13 +138,9 @@ Error Handling: If a tool (like Weather API) fails, the agent catches the error 
 
 [ ] Source Citations: Hyperlink specific URLs used in the final answer.
 
-<div align="center">
-
 👤 Author
 Vipul Kumar Singh AI / ML Engineer | Agentic AI Enthusiast
 
 Focused on building reliable, controllable, production-ready AI systems.
 
-LinkedIn • GitHub
-
-</div>
+Connect on LinkedIn • View GitHub Profile

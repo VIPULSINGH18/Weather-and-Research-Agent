@@ -77,6 +77,9 @@ Repeat: It loops back to synthesize the final answer.
 
 
 
+
+
+
 <h2>🧰 Tech Stack: </h2>
 
 Brain: Google Gemini (Flash Model) - Chosen for high speed, large context, and reliability.
@@ -91,6 +94,9 @@ Language: Python 3.12+
 
 
 
+
+
+
 <h2>📂 Project Structure</h2>
 Bash
 
@@ -102,6 +108,9 @@ Research-Weather-Agent/
 ├── .env                 # 🔐 API Keys (Keep secret!)
 ├── requirements.txt     # 📦 Python Dependencies
 └── README.md            # 📄 Documentation
+
+
+
 
 
 
@@ -140,6 +149,9 @@ streamlit run agent_frontend.py
 
 
 
+
+
+
 <h2>🎯 Why This Project Matters :</h2>
 
 This project moves beyond "calling an API" to building a reliable system. Key engineering decisions included:
@@ -156,12 +168,18 @@ Error Handling: If a tool (like Weather API) fails, the agent catches the error 
 
 
 
+
+
+
 <h2>🚧 Future Roadmap</h2>
 [ ] RAG Integration: Connect to local PDFs for document-based Q&A.
 
 [ ] Multi-Agent System: Separate 'Research Agent' and 'Writer Agent'.
 
 [ ] Source Citations: Hyperlink specific URLs used in the final answer.
+
+
+
 
 
 

@@ -1,6 +1,6 @@
 <div align="center">
-# 🧪 Research & Weather Assistant Agent </div>
-### An Autonomous AI Agent powered by LangGraph & Google Gemini 
+<h1># 🧪 Research & Weather Assistant Agent  </h1>
+<h2>### An Autonomous AI Agent powered by LangGraph & Google Gemini   </h2>
 
 ![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![LangChain](https://img.shields.io/badge/LangChain-🦜🔗-green?style=for-the-badge)
@@ -25,6 +25,8 @@
 *Not just a text generator — an engineered system.*
 
 ---
+
+</div>
 
 ## 🚀 Project Overview
 

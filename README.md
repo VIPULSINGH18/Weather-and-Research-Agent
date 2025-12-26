@@ -1,3 +1,4 @@
+<div align="center">
 # 🧪 Research & Weather Assistant Agent
 ### An Autonomous AI Agent powered by LangGraph & Google Gemini
 
@@ -191,3 +192,5 @@ Vipul Kumar Singh   AI / ML Engineer | Agentic AI Enthusiast
 Focused on building reliable, controllable, production-ready AI systems.
 
 LinkedIn: https://www.linkedin.com/in/vipulsk04/     GitHub Profile: https://github.com/VIPULSINGH18
+
+</div>

@@ -47,8 +47,8 @@ It autonomously determines *if* it needs to search the web, check the weather, o
 
 This project demonstrates **AI Engineering** concepts over simple prompt engineering. It uses a cyclic graph to manage state and decision-making.
 
-```mermaid
-graph TD
+
+
     User(User Query) --> Agent[🤖 ReAct Agent]
     Agent -->|Decides Tool Needed| Router{Router}
     
@@ -61,7 +61,10 @@ graph TD
     Agent -->|Reasoning Loop| Agent
     Agent -->|Confident Answer| Final[✅ Final Answer + Confidence Score]
     Final --> UI[🖥️ Streamlit Frontend]
-The ReAct Loop Process
+
+    
+The ReAct Loop Process:
+
 Thought: The agent analyzes the user request (e.g., "Weather in Delhi?").
 
 Decision: It chooses the correct tool (Weather API).
@@ -72,7 +75,8 @@ Observation: It reads the real data (JSON).
 
 Repeat: It loops back to synthesize the final answer.
 
-🧰 Tech Stack
+🧰 Tech Stack:
+
 Brain: Google Gemini (Flash Model) - Chosen for high speed, large context, and reliability.
 
 Orchestration: LangChain & LangGraph - For building stateful, cyclic agent workflows.
@@ -81,7 +85,8 @@ Tools: DuckDuckGo Search & Weatherstack API.
 
 Frontend: Streamlit - Custom CSS styling for a futuristic, dark-themed UI.
 
-Language: Python 3.10+
+Language: Python 3.12+
+
 
 📂 Project Structure
 Bash
@@ -94,36 +99,40 @@ Research-Weather-Agent/
 ├── .env                 # 🔐 API Keys (Keep secret!)
 ├── requirements.txt     # 📦 Python Dependencies
 └── README.md            # 📄 Documentation
-⚡ Getting Started
+
+
+⚡ Getting Started:
+
 1. Clone the Repository
 Bash
-
-git clone [https://github.com/yourusername/Research-Weather-Agent.git](https://github.com/yourusername/Research-Weather-Agent.git)
+git clone [https://github.c
+om/yourusername/Research-Weather-Agent.git](https://github.com/yourusername/Research-Weather-Agent.git)
 cd Research-Weather-Agent
+
 2. Set Up Virtual Environment
 Bash
-
 python -m venv venv
 # Windows
 venv\Scripts\activate
 # Mac/Linux
 source venv/bin/activate
+
 3. Install Dependencies
 Bash
-
 pip install -r requirements.txt
+
 4. Configure Environment Keys
 Create a .env file in the root directory:
-
-Ini, TOML
-
 GOOGLE_API_KEY=your_gemini_api_key
 WEATHER_API_KEY=your_weatherstack_key
+
 5. Run the Agent 🚀
 Bash
-
 streamlit run agent_frontend.py
-🎯 Why This Project Matters (Recruiter POV)
+
+
+🎯 Why This Project Matters :
+
 This project moves beyond "calling an API" to building a reliable system. Key engineering decisions included:
 
 Control Flow: Using LangGraph instead of simple chains to allow cyclic reasoning (Loops).
@@ -134,6 +143,7 @@ User Trust: The Confidence Score mechanism ensures the user knows when the AI is
 
 Error Handling: If a tool (like Weather API) fails, the agent catches the error and informs the user instead of crashing.
 
+
 🚧 Future Roadmap
 [ ] RAG Integration: Connect to local PDFs for document-based Q&A.
 
@@ -141,8 +151,9 @@ Error Handling: If a tool (like Weather API) fails, the agent catches the error 
 
 [ ] Source Citations: Hyperlink specific URLs used in the final answer.
 
+
 👤 Author
-Vipul Kumar Singh AI / ML Engineer | Agentic AI Enthusiast
+Vipul Kumar Singh   AI / ML Engineer | Agentic AI Enthusiast
 
 Focused on building reliable, controllable, production-ready AI systems.
 

@@ -75,7 +75,9 @@ Observation: It reads the real data (JSON).
 
 Repeat: It loops back to synthesize the final answer.
 
-🧰 Tech Stack:
+
+
+#🧰 Tech Stack:
 
 Brain: Google Gemini (Flash Model) - Chosen for high speed, large context, and reliability.
 
@@ -88,7 +90,8 @@ Frontend: Streamlit - Custom CSS styling for a futuristic, dark-themed UI.
 Language: Python 3.12+
 
 
-📂 Project Structure
+
+#📂 Project Structure
 Bash
 
 Research-Weather-Agent/
@@ -101,7 +104,8 @@ Research-Weather-Agent/
 └── README.md            # 📄 Documentation
 
 
-⚡ Getting Started:
+
+#⚡ Getting Started:
 
 1. Clone the Repository
 Bash
@@ -112,8 +116,10 @@ cd Research-Weather-Agent
 2. Set Up Virtual Environment
 Bash
 python -m venv venv
+
 # Windows
 venv\Scripts\activate
+
 # Mac/Linux
 source venv/bin/activate
 
@@ -131,7 +137,10 @@ Bash
 streamlit run agent_frontend.py
 
 
-🎯 Why This Project Matters :
+
+
+
+#🎯 Why This Project Matters :
 
 This project moves beyond "calling an API" to building a reliable system. Key engineering decisions included:
 
@@ -144,7 +153,10 @@ User Trust: The Confidence Score mechanism ensures the user knows when the AI is
 Error Handling: If a tool (like Weather API) fails, the agent catches the error and informs the user instead of crashing.
 
 
-🚧 Future Roadmap
+
+
+
+#🚧 Future Roadmap
 [ ] RAG Integration: Connect to local PDFs for document-based Q&A.
 
 [ ] Multi-Agent System: Separate 'Research Agent' and 'Writer Agent'.
@@ -152,7 +164,10 @@ Error Handling: If a tool (like Weather API) fails, the agent catches the error 
 [ ] Source Citations: Hyperlink specific URLs used in the final answer.
 
 
-👤 Author
+
+
+
+#👤 Author
 Vipul Kumar Singh   AI / ML Engineer | Agentic AI Enthusiast
 
 Focused on building reliable, controllable, production-ready AI systems.

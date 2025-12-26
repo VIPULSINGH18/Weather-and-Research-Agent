@@ -6,7 +6,7 @@
 ![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![LangChain](https://img.shields.io/badge/LangChain-🦜🔗-green?style=for-the-badge)
 ![LangGraph](https://img.shields.io/badge/LangGraph-🕸️-blue?style=for-the-badge)
-![Groq](https://img.shields.io/badge/Groq-⚡-orange?style=for-the-badge)
+![Gemini](https://img.shields.io/badge/Google%20Gemini-8E75B2?style=for-the-badge&logo=google&logoColor=white)
 ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
 
 <br />
